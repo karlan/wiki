@@ -1,0 +1,221 @@
+ @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700|Crimson+Text:400,400italic|Open+Sans+Condensed:300,700");
+ /*body {font-family: Tahoma, Geneva, sans-serif; margin: 5em 10em 5em 10em; font-size: 95%; line-height: 130%;}*/
+body {font-family: Crimson Text; margin: 5em 10em 5em 10em; font-size: 100%; line-height: 120%;background-color:#f9fff9;color:black}
+h1, h2, h3, h4, h5, h6 {font-family: Trebuchet MS, Helvetica, sans-serif; font-weight: bold; line-height:100%; margin-top: 1.0em; margin-bottom: 0.5em;}
+h1 {font-size: 1.6em; color: black;}
+h2 {font-size: 1.4em; color: black;}
+h3 {font-size: 1.2em; color: black;}
+h4 {font-size: 1.3em; color: #909090;}
+h5 {font-size: 1.3em; color: #989898;}
+h6 {font-size: 1.2em; color: #9c9c9c;}
+p, pre, blockquote, table, ul, ol, dl {margin-top: 1em; margin-bottom: 1em;}
+ul ul, ul ol, ol ol, ol ul {margin-top: 0.5em; margin-bottom: 0.5em;}
+li {margin: 0.3em auto;}
+ul {margin-left: 2em; padding-left: 0.5em;}
+dt {font-weight: bold;}
+img {border: none;}
+pre {border-left: 1px solid #ccc; margin-left: 2em; padding-left: 0.5em;}
+blockquote {padding: 0.4em; background-color: #efe ;}/*#f6f5eb;}*/
+th, td {border: 1px solid #ccc; padding: 0.3em;}
+th {background-color: #f0f0f0;}
+hr {border: none; border-top: 1px solid #ccc; width: 100%;}
+del {text-decoration: line-through; color: #777777;}
+.toc li {list-style-type: none;}
+.nav li {list-style-type: square;} 
+.todo {font-weight: bold; background-color: #f0ece8; color: #a03020;}
+.justleft {text-align: left;}
+.justright {text-align: right;}
+.justcenter {text-align: center;}
+.center {margin-left: auto; margin-right: auto;}
+/* classes for items of todo lists */
+.done0:before {content: "\2592\2592\2592\2592"; color: SkyBlue;}
+.done1:before {content: "\2588\2592\2592\2592"; color: SkyBlue;}
+.done2:before {content: "\2588\2588\2592\2592"; color: SkyBlue;}
+.done3:before {content: "\2588\2588\2588\2592"; color: SkyBlue;}
+.done4:before {content: "\2588\2588\2588\2588"; color: SkyBlue;}
+/* comment the next four or five lines out   *
+ * if you do not want color-coded todo lists */ 
+.done0 {color: #c00000;}
+.done1 {color: #c08000;}
+.done2 {color: #80a000;}
+.done3 {color: #00c000;}
+.done4 {color: #7f7f7f; text-decoration: line-through;}
+/* My style.css */
+
+body{
+    width:800px;
+    /*margin: 0 auto; */
+    padding: 0;
+  /*  color:#4C4C4C; */
+}
+
+h2,h3,h4,h5,h6{
+    margin-top:20px;
+    color: #CC0000;
+
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+a:link{color:black; text-decoration:underline}
+a:visited{color:black; text-decoration:underline}
+a:hover{
+    color:#fff;
+    background:#83BF73;
+}
+li{
+  line-height:130%;
+}
+.clear{
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+
+}
+
+header{
+  margin-top:10px;
+  margin-bottom:30px;
+  padding-bottom:5px;
+  border-bottom:1px dashed #E0DDDD;
+}
+#logo{
+      float:left;
+      font-size: 30px;
+      font-weight: bold;
+      margin:5px 0 5px 0;
+      display:block;
+}
+#logo a:hover{
+    color:#0C7823;
+    background:#fff;
+    text-decoration: none;
+}
+
+.topnav{
+  display:block;
+  margin:10px 20px 0 20px;
+}
+
+.nav{
+    margin-left:830px;
+    z-index:-1;
+    width:200px;
+    position:absolute;
+    color:#D4D4D4;
+    background:#F5F5F5;
+    padding-right:50px
+    border:2px dashed #D4D4D4;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.nav li{
+    line-height:130%;
+}
+.toc{
+    margin-top:150px;
+    margin-left:830px;
+    z-index:-1;
+    position:fixed;
+    padding-right:50px;
+    border:2px dashed #D4D4D4;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;}
+.toc li{
+    line-height:130%;
+}
+article{
+  clear:both;
+}
+footer,footer a,footer a:visited{
+  margin-top:30px;
+}
+article a[href^="http://"],article a[href^="https://"]{
+  background:transparent url(bg/icons.png) no-repeat scroll right -16px; 
+  padding:0 16px 0 0;
+}
+article a.external{
+  background:transparent url(bg/icons.png) no-repeat scroll right -16px; 
+  padding:0 16px 0 0; 
+  display:inline-block;
+}
+article a[href^="http://"]:hover,article a[href^="https://"]:hover{
+  background-position:right -30px;
+      /* color:#fff;*/
+    background:#83BF73;
+}
+article a.external:hover{
+  background-position:right -30px;
+      color:#fff;
+    background:#83BF73;
+}
+ 
+footer{
+  border-top:1px dashed #D4D4D4;
+  text-align:center;
+  margin-bottom:20px;
+}
+.copy{
+  display:block;
+  margin-top:5px;
+}
+.timestamp{
+margin:0;
+}
+
+.picture_left {
+    float:left;
+    margin:10px;
+    margin-left:50px;
+}
+.picture_right {
+    float:right;
+    margin:10px;
+}
+
+
+/* .menu {
+	width: 100%;
+	margin: 1em 0;
+        margin-left:200px;
+        position:fixed;
+	padding: 0;
+	background: #fff none;
+}*/
+.menu {
+	position: absolute;
+	left: 650px;
+	top: 80px;
+	padding: 0;
+	background: white none;
+}
+.menu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.menu li {
+	margin: 0.1em;
+	padding: 0;
+        border:0.1px solid #D4D4D4;
+        font-family: Tahoma, Geneva, sans-serif;
+	float:left ;
+	width: 5em;
+	margin-right: 0.2em;
+	background: white none;
+	text-align: center;
+}
+
+
+.menu a {
+	display: block;
+	width: 100%;
+	text-decoration: none;
+}
+.menu a:hover {
+	background: black none;
+}
